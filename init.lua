@@ -1,0 +1,2 @@
+require("iranhoe")
+print("hello")
