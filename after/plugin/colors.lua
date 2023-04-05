@@ -6,4 +6,56 @@ function ColorMyPencils(color)
 	vim.api.nvim_set_hl(0, "NormalFloat", { bg = "none" })
 end
 
-ColorMyPencils()
+-- ColorMyPencils()
+
+function ColorVsCode()
+  local c = require('vscode.colors').get_colors()
+  require('vscode').setup({
+    -- Alternatively set style in setup
+    -- style = 'light'
+
+    -- Enable transparent background
+    transparent = true,
+
+    -- Enable italic comment
+    italic_comments = true,
+
+    -- Disable nvim-tree background color
+    disable_nvimtree_bg = true,
+
+    -- Override colors (see ./lua/vscode/colors.lua)
+    color_overrides = {
+      vscLineNumber = '#FFFFFF',
+    },
+
+    -- Override highlight groups (see ./lua/vscode/theme.lua)
+    group_overrides = {
+      -- this supports the same val table as vim.api.nvim_set_hl
+      -- use colors from this colorscheme by requiring vscode.colors!
+      Cursor = { fg=c.vscDarkBlue, bg=c.vscLightGreen, bold=true },
+    }
+  })
+
+  -- require('vscode').load() -- enable VsCode Color
+end
+
+----------------------------------------------------
+-- Other them
+----------------------------------------------------
+
+-- require("nebulous").setup {
+--   variant = "twilight"
+-- }
+
+-- require('lualine').setup {
+--   options = {
+--     -- theme name
+--     theme = 'nebulous'
+--   }
+-- }
+vim.cmd.colorscheme("OceanicNext")
+
+vim.api.nvim_set_hl(0, "Normal", { bg = "none" })
+vim.api.nvim_set_hl(0, "NormalFloat", { bg = "none" })
+vim.api.nvim_set_hl(0, "EndOfBuffer", { bg = "none" })
+
