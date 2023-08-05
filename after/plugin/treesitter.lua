@@ -19,7 +19,9 @@ ts.setup {
     "scss",
     "rust",
     "tsx",
-    "json"
+    "json",
+    "markdown",
+    "markdown_inline",
   },
 
   autotag = {

@@ -1,5 +1,6 @@
 -- not sure why I need this.
 vim.cmd('autocmd!')
+local opt = vim.opt;
 
 -- Settings to review
 -- vim.scriptencoding = 'utf-8'
@@ -22,46 +23,46 @@ vim.cmd('autocmd!')
 -- vim.opt.wildignore:append { '*/node_modules/*' }
 -- Turn off paste mode when leaving insert
 -- vim.api.nvim_create_autocmd("insertLeave", {
-    -- pattern = '*',
-    -- command = "set nopaste"
+-- pattern = '*',
+-- command = "set nopaste"
 -- })
 -- Add asterisks in block comments
 -- vim.opt.formatoptions:appnd { 'r' }
 
-vim.opt.guicursor = ""
-vim.opt.shell = 'fish'
+opt.guicursor = ""
+opt.shell = 'zsh'
 
-vim.opt.nu = true
-vim.opt.relativenumber = true
+opt.nu = true
+opt.relativenumber = true
 
-vim.opt.tabstop = 2
-vim.opt.softtabstop = 2
-vim.opt.shiftwidth = 2
-vim.opt.expandtab = true
+opt.tabstop = 2
+opt.softtabstop = 2
+opt.shiftwidth = 2
+opt.expandtab = true
 
-vim.opt.smartindent = true
+opt.smartindent = true
 
-vim.opt.wrap = false
+opt.wrap = false
 
-vim.opt.swapfile = false
-vim.opt.backup = false
-vim.opt.undodir = os.getenv("HOME") .. "/.vim/undodir"
-vim.opt.undofile = true
+opt.swapfile = false
+opt.backup = false
+opt.undodir = os.getenv("HOME") .. "/.vim/undodir"
+opt.undofile = true
 
-vim.opt.hlsearch = false
-vim.opt.incsearch = true
+opt.hlsearch = false
+opt.incsearch = true
 
-vim.opt.termguicolors = true
+opt.termguicolors = true
 
-vim.opt.scrolloff = 8
-vim.opt.signcolumn = "yes"
-vim.opt.isfname:append("@-@")
+opt.scrolloff = 8
+opt.signcolumn = "yes"
+opt.isfname:append("@-@")
 
-vim.opt.updatetime = 50
+opt.updatetime = 50
 
-vim.opt.colorcolumn = "80"
+opt.colorcolumn = "80"
 
-vim.opt.clipboard = 'unnamedplus'
+opt.clipboard = 'unnamedplus'
 
 -- Highlights
 -- vim.opt.cursorline = true
@@ -69,4 +70,3 @@ vim.opt.clipboard = 'unnamedplus'
 -- vim.opt.wildoptions = 'pum'
 -- vim.opt.pumblend = 5
 -- vim.opt.background = 'dark'
-
