@@ -7,7 +7,7 @@ ts.setup {
     "c",
     "lua",
     "vim",
-    "help",
+    -- "help",
     "query",
     "javascript",
     "typescript",

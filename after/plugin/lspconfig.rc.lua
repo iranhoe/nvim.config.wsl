@@ -34,6 +34,7 @@ nvim_lsp.lua_ls.setup {
     }
   }
 }
+
 -- print("hello")
 --k
 -- require'lspconfig'.lua_lsp.setup {
