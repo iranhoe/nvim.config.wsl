@@ -40,9 +40,9 @@ lsp.on_attach(function(client, bufnr)
   vim.keymap.set("n", "]d", vim.diagnostic.goto_prev, opts)
   vim.keymap.set("n", "<leader>vca", vim.lsp.buf.code_action, opts)
   vim.keymap.set("n", "<leader>vrr", vim.lsp.buf.references, opts)
-  vim.keymap.set("n", "<leader>vrn", vim.lsp.buf.rename, opts)
+  vim.keymap.set("n", "<leader>rn", vim.lsp.buf.rename, opts)
   vim.keymap.set("i", "<C-h>", vim.lsp.buf.signature_help, opts)
-  vim.keymap.set('n', '<leader>ve', vim.diagnostic.open_float)
+  vim.keymap.set('n', '<leader>e', vim.diagnostic.open_float)
 
 
   -- vim.keymap.set('n', 'gd', vim.lsp.buf.definition, opts)
