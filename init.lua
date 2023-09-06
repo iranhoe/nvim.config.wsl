@@ -1,1 +1,2 @@
 require("iranhoe")
+print "hola"

@@ -3,13 +3,13 @@ if (not status) then return end
 local keymap = vim.keymap
 
 saga.setup({
-    ui = {
-        winblend = 10,
-        border = 'rounded',
-        colors = {
-            normal_bg = '#002b36'
-        }
+  ui = {
+    winblend = 10,
+    border = 'rounded',
+    colors = {
+      normal_bg = '#002b36'
     }
+  }
 })
 
 local diagnostic = require("lspsaga.diagnostic")
@@ -29,6 +29,6 @@ keymap.set('n', '<leader>kr', '<Cmd>Lspsaga rename<CR>', opts)
 local codeaction = require("lspsaga.codeaction")
 keymap.set("n", "<leader>ka", function() codeaction:code_action() end, { silent = true })
 keymap.set("v", "<leader>ka", function()
-    vim.fn.feedkeys(vim.api.nvim_replace_termcodes("<C-U>", true, false, true))
-    codeaction:range_code_action()
+  vim.fn.feedkeys(vim.api.nvim_replace_termcodes("<C-U>", true, false, true))
+  codeaction:range_code_action()
 end, { silent = true })

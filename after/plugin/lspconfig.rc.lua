@@ -1,6 +1,10 @@
 local status, nvim_lsp = pcall(require, 'lspconfig')
-if (not status) then return end
+if (not status) then
+  print("no lspconfig")
+  return
+end
 
+print("loaded lspconfig")
 local protocol = require('vim.lsp.protocol')
 
 local on_attach = function(client, bufnr)
