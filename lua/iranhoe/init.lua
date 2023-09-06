@@ -1,7 +1,7 @@
 require("iranhoe.remap")
 require("iranhoe.set")
 require("iranhoe.plugins")
-require("iranhoe.lsp")
+-- require("iranhoe.lsp")
 
 local has = function(x)
   return vim.fn.has(x) == 1
