@@ -36,16 +36,3 @@ nvim_lsp.lua_ls.setup {
     }
   }
 }
-
--- print("hello")
---k
--- require'lspconfig'.lua_lsp.setup {
---   settings = {
---     Lua = {
---       diagnostics = {
---         -- Get the language server to recognize the `vim` global
---         globals = {'vim'},
---       },
---     },
---   },
--- }llk
