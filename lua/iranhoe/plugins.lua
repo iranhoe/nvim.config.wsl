@@ -30,10 +30,10 @@ return packer.startup(function(use)
 
   use('onsails/lspkind-nvim')           -- vscode-like pictograms
   use 'jose-elias-alvarez/null-ls.nvim' -- Use Neovim as a language server to inject LSP diagnostics, code actions, and more via Lua
-  use {
-    'glepnir/lspsaga.nvim',
-    commit = "ea053bebfd2cc7e8aad97cc2935db246768857ea"
-  }
+  -- use {
+  --   'glepnir/lspsaga.nvim',
+  --   commit = "ea053bebfd2cc7e8aad97cc2935db246768857ea"
+  -- }
 
   -- ui
   use('hoob3rt/lualine.nvim') -- Statusline
